@@ -1,0 +1,281 @@
+/* 1. Centraliza o palco na tela */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centraliza na largura */
+    align-items: center;     /* Centraliza na altura */
+    min-height: 100vh;
+    overflow-x: hidden;      /* Evita barra de rolagem lateral se a imagem crescer muito */
+}
+
+/* 2. O container do cenário */
+.cenario-container {
+    position: relative;
+    /* Aumente este valor para a imagem crescer */
+    width: 95%;           /* Ocupa 95% da largura da tela */
+    max-width: 1000px;    /* Ou defina um tamanho máximo bem grande */
+    display: block;       /* Garante que ele se comporte como um bloco centralizado */
+    line-height: 0;
+}
+
+/* 3. A imagem propriamente dita */
+.imagem-fundo {
+    width: 100%;  /* Ela sempre estica até o limite do container */
+    height: auto; /* Mantém a proporção */
+    display: block;
+}
+
+
+.botao-porta {
+    position: absolute;
+    
+    /* 1. Coordenadas (Ajuste para bater com o desenho da casa) */
+    top: 20%;
+    left: 0%;
+    
+    /* 2. Tamanho (Ajuste para o tamanho real do seu PNG) */
+    width: 20%; 
+    height: 60%;
+
+    /* 3. Imagem da Porta Fechada */
+    background-image: url('porta_fechada.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent; /* Remove o fundo padrão do botão */
+    border: none;                  /* Remove a borda padrão */
+    cursor: pointer;
+}
+/* 4. Quando o mouse passar por cima (:hover) */
+.botao-porta:hover {
+    background-image: url('porta_aberta.png');
+}
+
+
+.botao-seta1 {
+    position: absolute;
+    
+    top: 50%;
+    left: 0%;
+    
+    width: 7%; 
+    height: 7%;
+
+    /* 3. Imagem da Porta Fechada */
+    background-image: url('seta1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.botao-seta1:hover {
+    transform: scale(1.10);
+}
+
+.botao-seta2 {
+    position: absolute;
+    
+    /* 1. Coordenadas (Ajuste para bater com o desenho da casa) */
+    top: 50%;
+    left: 95%;
+    
+    /* 2. Tamanho (Ajuste para o tamanho real do seu PNG) */
+    width: 7%; 
+    height: 7%;
+
+    /* 3. Imagem da Porta Fechada */
+    background-image: url('seta1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent; /* Remove o fundo padrão do botão */
+    border: none;                  /* Remove a borda padrão */
+    cursor: pointer;
+}
+.botao-seta2:hover {
+    transform: scale(1.10);
+}
+
+.botao-cama {
+    position: absolute;
+    
+    /* 1. Coordenadas (Ajuste para bater com o desenho da casa) */
+    top: 60%;
+    left: 65%;
+    
+    /* 2. Tamanho (Ajuste para o tamanho real do seu PNG) */
+    width: 23%; 
+    height: 40%;
+
+    /* 3. Imagem da Porta Fechada */
+    background-image: url('cama.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent; /* Remove o fundo padrão do botão */
+    border: none;                  /* Remove a borda padrão */
+    cursor: pointer;
+}
+.botao-cama:hover {
+    transform: scale(1.10);
+}
+
+.botao-kuromi {
+    position: absolute;
+    
+    /* 1. Coordenadas (Ajuste para bater com o desenho da casa) */
+    top: 50%;
+    left: 70%;
+    
+    /* 2. Tamanho (Ajuste para o tamanho real do seu PNG) */
+    width: 17%; 
+    height: 17%;
+
+    /* 3. Imagem da Porta Fechada */
+    background-image: url('Kuromi.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent; /* Remove o fundo padrão do botão */
+    border: none;                  /* Remove a borda padrão */
+    cursor: pointer;
+}
+.botao-kuromi:hover {
+    transform: scale(1.10);
+}
+
+.botao-tv {
+    position: absolute;
+    
+    /* 1. Coordenadas (Ajuste para bater com o desenho da casa) */
+    top: 26%;
+    left: 27%;
+    
+    /* 2. Tamanho (Ajuste para o tamanho real do seu PNG) */
+    width: 16%; 
+    height: 26%;
+
+    /* 3. Imagem da Porta Fechada */
+    background-image: url('TV.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent; /* Remove o fundo padrão do botão */
+    border: none;                  /* Remove a borda padrão */
+    cursor: pointer;
+}
+.botao-tv:hover {
+    transform: scale(1.10);
+}
+
+.botao-sapo {
+    position: absolute;
+    
+    /* 1. Coordenadas (Ajuste para bater com o desenho da casa) */
+    top: 40%;
+    left: 22%;
+    
+    /* 2. Tamanho (Ajuste para o tamanho real do seu PNG) */
+    width: 10%; 
+    height: 13%;
+
+    /* 3. Imagem da Porta Fechada */
+    background-image: url('Sapo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent; /* Remove o fundo padrão do botão */
+    border: none;                  /* Remove a borda padrão */
+    cursor: pointer;
+}
+.botao-sapo:hover {
+    transform: scale(1.10);
+}
+
+.botao-hqs {
+    position: absolute;
+    
+    /* 1. Coordenadas (Ajuste para bater com o desenho da casa) */
+    top: 12%;
+    left: 81%;
+    
+    /* 2. Tamanho (Ajuste para o tamanho real do seu PNG) */
+    width: 20%; 
+    height: 16%;
+
+    /* 3. Imagem da Porta Fechada */
+    background-image: url('HQs.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent; /* Remove o fundo padrão do botão */
+    border: none;                  /* Remove a borda padrão */
+    cursor: pointer;
+}
+.botao-hqs:hover {
+    transform: scale(1.10);
+}
+
+.botao-cd {
+    position: absolute;
+    
+    /* 1. Coordenadas (Ajuste para bater com o desenho da casa) */
+    top: 12%;
+    left: 43%;
+    
+    /* 2. Tamanho (Ajuste para o tamanho real do seu PNG) */
+    width: 10%; 
+    height: 15%;
+
+    /* 3. Imagem da Porta Fechada */
+    background-image: url('CD.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent; /* Remove o fundo padrão do botão */
+    border: none;                  /* Remove a borda padrão */
+    cursor: pointer;
+}
+.botao-cd:hover {
+    transform: scale(1.10);
+}
+
+.botao-espelho {
+    position: absolute;
+    
+    /* 1. Coordenadas (Ajuste para bater com o desenho da casa) */
+    top: 20%;
+    left: 69.5%;
+    
+    /* 2. Tamanho (Ajuste para o tamanho real do seu PNG) */
+    width: 11%; 
+    height: 26%;
+
+    /* 3. Imagem da Porta Fechada */
+    background-image: url('Espelho.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent; /* Remove o fundo padrão do botão */
+    border: none;                  /* Remove a borda padrão */
+    cursor: pointer;
+}
+.galeria-espelho {
+    display: grid;
+    justify-content: center;
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.galeria-espelho img:hover {
+    transform: scale(1.05);
+}
+
+/* Formulário*/
+h2 {
+    font-family: sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+label {
+    font-family: sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.box {
+    color: rgb(91, 110, 89);
+}
