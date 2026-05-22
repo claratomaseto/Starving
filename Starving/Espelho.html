@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <head>
+        <link rel="stylesheet" href="estilo.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="widht=device-widht, initial-scale=1.0">
+        <title>Espelho</title>
+        <link rel="Icon" type="image/x-icon" href="Logo.png">
+        <style>
+            body {
+                background-color: rgb(00, 00, 00);
+            }
+        .formulario{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        </style>
+    <script src= 'script.js' defer></script>
+</head>
+<body>
+    <a href="Casa.html" target="_self">
+        <img src="Voce.jpg" alt="Voce" style="width:900px;"> 
+    </a>
+    <div class ="box">
+        <div class ="box2">
+            <div class = 'formulario'>
+                <h2 class = 'titulo'>Clown Registration</h2>
+                <form id="meuFormulario">
+                <label for="titulo">Nome</label>
+                <input type="text" id="titulo" placeholder="➤" required><br>
+                <label for="imagem">Imagem</label>
+                <input type="url" id="imagem" placeholder="URL da imagem" required><br>
+                <label for="paragrafo">Escreva para Starving</label>
+                <textarea id="paragrafo" placeholder="Diga"></textarea><br>
+                <button type="submit">Adicionar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="colecao"></div>
+
+</body>
+</html>
